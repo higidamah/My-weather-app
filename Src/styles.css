@@ -1,0 +1,48 @@
+.container {
+  text-align: center;
+  box-shadow: #430f58 0px 10px 10px 0px;
+  background-image: radial-gradient(
+    401px at 50.6% -0.3%,
+    rgba(255, 255, 255, 0.31) 1.2%,
+    rgb(36, 212, 219) 100.2%
+  );
+  border-radius: 15px;
+  color: black;
+  padding: 40px;
+  margin: 40px auto;
+}
+
+h1 {
+  font-family: "Beau Rivage", cursive;
+}
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h4 {
+  padding-top: 30px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.emoji {
+  font-size: 70px;
+}
+.degrees {
+  font-size: 30px;
+  font-family: math;
+}
+.weather {
+  font-size: 20px;
+  font-family: monospace;
+  padding-bottom: 0px;
+}
+.activity {
+  font-family: fantasy;
+}
+p {
+  font-size: 20px;
+  font-family: math;
+}
+.units {
+  font-size: 15px;
+  position: relative;
+  top: -12px;
+}
