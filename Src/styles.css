@@ -46,3 +46,7 @@ p {
   position: relative;
   top: -12px;
 }
+.github {
+  text-align: center;
+  display: block;
+}
