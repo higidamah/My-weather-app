@@ -130,30 +130,9 @@ function showPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
 }
-function showFahrenheitTemp(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#current-temp");
-  celciusTemp.classList.remove("active");
-  fahrenheitTemp.classList.add("active");
-  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-function showCelciusTemp(event) {
-  event.preventDefault();
-  celciusTemp.classList.add("active");
-  fahrenheitTemp.classList.remove("active");
-  let temperatureElement = document.querySelector("#current-temp");
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
-}
 
 let celciusTemperature = null;
 let currentLocationButton = document.querySelector("#location");
 currentLocationButton.addEventListener("click", showPosition);
-
-let fahrenheitTemp = document.querySelector("#fahrenheit-temp");
-fahrenheitTemp.addEventListener("click", showFahrenheitTemp);
-
-let celciusTemp = document.querySelector("#celsius-temp");
-celciusTemp.addEventListener("click", showCelciusTemp);
 
 searchCity("Nairobi");
