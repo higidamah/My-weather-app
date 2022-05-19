@@ -34,48 +34,53 @@
   </head>
   <body>
     <div class="container">
-      <h1>Weather App</h1>
-      <br />
-      <form id="search-form">
-        <input
-          type="text"
-          placeholder="Enter City Name"
-          class="from-control"
-          id="city-input"
-        />
-        <button type="submit" class="btn btn-primary btn-sm">Search</button>
-        <button type="submit" class="btn btn-success btn-sm" id="location">
-          🔍
-        </button>
-      </form>
-      <h2 id="current-city">Nairobi</h2>
-      <div class="day" id="date">Fri,April 08 10:00 Am "</div>
-      <img
-        class="icon"
-        alt="Partly cloudy"
-        src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-        id="icon"
-      />
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <h1>Weather App</h1>
+          <br />
+          <form id="search-form">
+            <input
+              type="text"
+              placeholder="Enter City Name"
+              class="from-control"
+              id="city-input"
+            />
+            <button type="submit" class="btn btn-primary btn-sm">Search</button>
+            <button type="submit" class="btn btn-success btn-sm" id="location">
+              🔍
+            </button>
+          </form>
+          <h2 id="current-city">Nairobi</h2>
+          <div class="day" id="date">Fri,April 08 10:00 Am "</div>
+          <img
+            class="icon"
+            alt="Partly cloudy"
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            id="icon"
+          />
 
-      <div class="degrees">
-        <strong class="currentTemp" id="current-temp"></strong>
-        <span class="units"> °C</span>
-      </div>
-      <div class="weather" id="weather">Sunny</div>
+          <div class="degrees">
+            <strong class="currentTemp" id="current-temp"></strong>
+            <span class="units"> °C</span>
+          </div>
+          <div class="weather" id="weather">Sunny</div>
 
-      <div class="humidity" id="humidity">
-        <i class="fa-solid fa-droplet"></i> 10%
+          <div class="humidity" id="humidity">
+            <i class="fa-solid fa-droplet"></i> 10%
+          </div>
+          <div class="wind" id="wind">
+            <i class="fa-solid fa-wind"></i> 10 km/h
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+        </div>
+        <span class="github"
+          ><a href="https://github.com/higidamah/My-weather-app"
+            >Open-source code</a
+          >
+          by Damaris Higi</span
+        >
       </div>
-      <div class="wind" id="wind"><i class="fa-solid fa-wind"></i> 10 km/h</div>
-      <div class="weather-forecast" id="forecast"></div>
     </div>
-
     <script src="src/index.js"></script>
-    <span class="github"
-      ><a href="https://github.com/higidamah/My-weather-app"
-        >Open-source code</a
-      >
-      by Damaris Higi</span
-    >
   </body>
 </html>

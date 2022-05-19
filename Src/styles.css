@@ -1,4 +1,7 @@
-.container {
+.weather-app {
+  padding: 40px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
   text-align: center;
   box-shadow: #430f58 0px 10px 10px 0px;
   background-image: radial-gradient(
@@ -8,9 +11,10 @@
   );
   border-radius: 15px;
   color: black;
-  padding: 40px;
-  margin: 40px auto;
-  max-width: 50%;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 h1 {
@@ -50,6 +54,7 @@ p {
 .github {
   text-align: center;
   display: block;
+  margin: 20px;
 }
 .units .active {
   cursor: default;
